@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: prod
 
 resources:
-- ../../base
+- ../../rollouts-base
 - infrastructure.yaml
 - frontend-rollout.yaml
 - ingress.yaml
@@ -19,6 +19,6 @@ patches:
       path: /spec/progressDeadlineSeconds
       value: 60
   target:
-    kind: Deployment
+    kind: Rollout
     labelSelector: app.kubernetes.io/part-of=booking-microservices
 
