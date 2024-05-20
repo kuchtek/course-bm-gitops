@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: preview.kuchczynscy.pl # rememeber to change it to yours
+    - host: argocd.kuchczynscy.pl # rememeber to change it to yours
       http:
         paths:
           - path: /
