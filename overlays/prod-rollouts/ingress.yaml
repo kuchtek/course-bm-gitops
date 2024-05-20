@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: rollouts.34.118.36.67.nio.io # rememeber to change it to yours
+    - host: preview.kuchczynscy.pl # rememeber to change it to yours
       http:
         paths:
           - path: /
