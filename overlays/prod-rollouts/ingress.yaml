@@ -9,21 +9,21 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: argocd.kuchczynscy.pl # rememeber to change it to yours
+    - host: preview.kuchczynscy.pl # rememeber to change it to yours
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: frontend
+                name: frontend-stable
                 port:
                   number: 80
           - path: /(.*)
             pathType: ImplementationSpecific
             backend:
               service:
-                name: frontend
+                name: frontend-stable
                 port:
                   number: 80
 
