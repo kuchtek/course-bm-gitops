@@ -8,6 +8,7 @@ resources:
 - infrastructure.yaml
 - frontend-rollout.yaml
 - ingress.yaml
+- ingress-preview.yaml
 
 # more information: https://argo-rollouts.readthedocs.io/en/latest/features/kustomize/
 openapi:
